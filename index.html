@@ -14,17 +14,42 @@
 <style>
     .adlam-font{
   font-family: "ADLaM Display", system-ui;
+  font-weight: 100;
 }
 </style>
 
 </head>
 
-<body>
+<body class="adlam-font">
    <header>
 
-<div class="navbar bg-base-100 bg-[#FFF9F4]">
+<div class=" bg-base-100 bg-[#FFF9F4]">
 
+<div class="navbar lg:container mx-auto">
     <div class="navbar-start">
+ 
+        <img class="lg:hidden" src="c1-assets/logo-header.png" alt="">
+
+    <div class="lg:flex lg:gap-1 hidden">
+        <img src="c1-assets/logo-header.png" alt="">
+    <a class="btn btn-ghost text-xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+    </div>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 font-semibold">
+      <li><a>Find a Pet</a></li>
+        <li><a>Breads</a></li>
+        <li><a>Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+  <div class="hidden lg:flex lg:gap-4 lg:items-center">
+    
+<i class="fa-regular fa-bell"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+ <a class="btn btn-outline btn-warning text-black">Login</a>
+ <a class="btn btn-warning">Register</a>
+  </div>
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg
@@ -40,7 +65,7 @@
             d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
-      <ul
+      <ul 
         tabindex="0"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold">
         <li><a>Find a Pet</a></li>
@@ -48,26 +73,32 @@
         <li><a>Contact Us</a></li>
       </ul>
     </div>
-    <div class="flex gap-1">
-        <img src="c1-assets/logo-header.png" alt="">
-    <a class="btn btn-ghost text-xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
-    </div>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 font-semibold">
-      <li><a>Find a Pet</a></li>
-        <li><a>Breads</a></li>
-        <li><a>Contact Us</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end gap-2 flex">
-<i class="fa-regular fa-bell"></i>
-<i class="fa-solid fa-magnifying-glass"></i>
- <a class="btn btn-outline btn-warning text-black">Login</a>
- <a class="btn btn-warning">Register</a>
-  </div>
   </div>
 
+</div>
+  </div>
+<div>
+
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col">
+    
+    <div class="text-left space-y-4 absolute top-40" >
+      <h1 class="text-5xl font-semibold lg:w-1/2">Pamper Your Pet, Because They Deserve the Bes</h1>
+      <p class="text-sm lg:w-1/2">
+        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+      </p>
+      <button class="btn btn-warning">Find a pet</button>
+    </div>
+   <div>
+     <img
+      src="c1-assets/Adobe Express - file.png"
+      class="w-100% rounded-lg"
+    />
+   </div>
+  </div>
+</div>
+
+</div>
 
    </header>
 </body>
